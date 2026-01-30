@@ -11,7 +11,6 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 
 # Web Scraping Libraries
-import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin

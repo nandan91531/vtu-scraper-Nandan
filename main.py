@@ -11,6 +11,7 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 
 # Web Scraping Libraries
+import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
@@ -35,7 +36,7 @@ class Config:
     DEFAULT_RESULT_URL = 'https://results.vtu.ac.in/D25J26Ecbcs/resultpage.php'
     TESSERACT_PATH = os.getenv('TESSERACT_PATH', None)
     MAX_SCRAPER_WORKERS = 20
-    MAX_RETRY_ATTEMPTS = 23
+    MAX_RETRY_ATTEMPTS = 22
     TEMP_EXCEL_STORAGE: Dict[str, io.BytesIO] = {} 
     
     @classmethod
